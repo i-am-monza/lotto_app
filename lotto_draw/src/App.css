@@ -1,0 +1,32 @@
+/*Style the div#app container which houses all the elements that are returned from other components to the screen*/
+div#app.container {
+	margin: 10%;
+	margin-top: 2%;
+	margin-bottom: auto;
+	border: 2px double black;
+	border-style: dotted;
+	border-radius: 28px;
+	padding: 4%;
+	background: url("background.jpg");
+	background-size: 100px 200px ;
+	animation: slides 100s linear infinite;
+}
+
+/*Create a keyframes function thats used for the animation property*/
+@keyframes slides {
+  0% {
+    background-position: 30% 10%;
+  }
+  25% {
+    background-position: 160% 30%;
+  }
+  50% {
+    background-position: 80% 60%;
+  }
+  75% {
+    background-position: 100% 80%;
+  }
+  100% {
+    background-position: 80% 30%;
+  }
+}

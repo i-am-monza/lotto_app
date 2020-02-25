@@ -1,0 +1,19 @@
+/*Style the div#forHeader element thats the direct child of the div.row element*/
+div.row > div#forHeader.col-sm-12 {
+	display: flex;
+	justify-content: center;
+}
+
+/*Style the h1 element thats a child of the div#forHeader element*/
+div#forHeader > h1 {
+	font-family: Arial;
+	font-size: 32px;
+	border: none;
+	padding: 4px;
+	margin: 8px;
+	background: black;
+	color: white;
+	mix-blend-mode: multiply;
+	border-radius: 8px;
+	text-shadow: 15px 20px 30px lightgrey;
+}

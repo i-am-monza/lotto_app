@@ -1,0 +1,161 @@
+/*The block that has the draw ball image. Style how it appears on screen*/
+#numberBall {
+    /*Have the draw balls formatted inline when displayed*/
+    display: inline-block;
+    width: 1060px;
+    height:auto;
+    margin: auto;
+    text-align:center;
+    /*The ralative position is important when you want another element positioned over the #numberBall element*/
+    position:relative;
+}
+
+/*Style how the number text that appears over the ticket image appears*/
+.text-block {
+    /*The absolute position sets this elements position relative to an element with a relative position*/
+    position: absolute;
+    margin: auto;
+    /*Center this component at its absolute determined position*/
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    color:#fff;
+    height:100px;
+}
+
+/*The block that has the draw ball image. Style how it appears on screen*/
+#drawBall {
+    display: inline-block;
+    width: 1060px;
+    height:auto;
+    margin: auto;
+    text-align:center;
+    position:relative;
+}
+
+/*Style how the number text that appears over the draw image appears*/
+.draw-block {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    color:#fff;
+    height:100px;
+}
+
+/*The block that wraps the draw balls to be mapped on screen. Style how the balls appear*/
+div#drawTicket {
+    /*Allow this element to have a flexible position state such that you can center justify its children*/
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+/*Style each generated ball from the draw. The randomly generated numbers are written over an image*/
+#drawBall > img {
+    width: 150px; height: 150px;
+}
+
+/*The block that wraps the user ticket number balls. Style how these mapped balls appear.*/
+div#userTicket {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-right: 400px;
+    margin-left: 400px;
+}
+
+/*Style each ball that contains the users chosen numbers from the ticket. The numbers are written over an imnage*/
+#numberBall > img {
+    width: 100px; height: 100px;
+}
+
+div#wheelBlock {
+    display: flex;
+    justify-content: center;
+}
+
+/*Style the spinning wheel to have a gradient background blended with a white color*/
+div#wheelBlock > img {
+    box-shadow: 20px 20px 20px orangered;
+    background: linear-gradient(orangered, red, maroon, darkred);
+    color: white;
+    mix-blend-mode: multiply;
+    border-radius: 150px;
+}
+
+/*Center justify buttons in the center*/
+div#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+/*Style how the button element looks on the screen*/
+button {
+    cursor: pointer;
+    margin: 6px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: monospace;
+    font-size: 24px;
+    box-shadow: 15px 15px 30px black; 
+    background: linear-gradient(black, silver, lightgrey, white);
+    color: black;
+    mix-blend-mode: multiply;
+}
+
+/*Style how a button will behave whgen its clicked by the user*/
+button:focus {
+    box-shadow: 15px 15px 30px black;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+/*Style the h1 element thats a direct child of the div#mainStage element*/
+div#mainStage > h1#results {
+    font-family: Arial;
+    font-size: 48px;
+    font-weight: bold;
+    border: none;
+    padding: 4px;
+    margin: 8px;
+    width: auto;
+    background: white;
+    color: rgba(30, 120, 60, 20);
+    mix-blend-mode: multiply;
+    border-radius: 8px;
+}
+
+/*Style the h4 element thats the direct child of the div.text-block*/
+div.text-block > h4 {
+    font-family: Times;
+    font-size: 42px;
+    color: darkred;
+    text-shadow: 15px 20px 30px lightgrey;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    mix-blend-mode: multiply;
+}
+
+/*Style the imgage element thats the direct child of the div#drawBall element*/
+div#drawBall > img {
+    width: 100px;
+    height: 100px;
+    border: transparent;
+    border-radius: 150px;
+}
+
+/*Style the h2 element thats the direct child of the div.draw-block*/
+div.draw-block > h2 {
+    font-size: 32px;
+}

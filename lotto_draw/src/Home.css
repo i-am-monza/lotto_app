@@ -1,0 +1,6 @@
+/*Style the paragraph thats the direct child of the div.col-sm-12 element*/
+div.col-sm-12 > p {
+	font-family: Times;
+	font-size: 22px;
+	text-shadow: 5px 10px 10px lightgrey;
+}
